@@ -2,10 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="css/creative.css" rel="stylesheet">
     <title></title>
 </head>
 <body>
-    <div>test it</div>> 
+    <!-- for main logo -->
+<svg class="mainlogo" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="logo_all">
+      <!-- origin -->
+          <circle cx="100" cy="200" r="50" fill="transparent"/>
+      <!-- up -->
+      <circle cx="350" cy="125" r="50" fill="transparent"/>
+      <!-- down -->
+      <circle cx="350" cy="275" r="50" fill="transparent"/>
+      <!-- Line trank -->
+      <path d="M160 200 H 220 C 270 200,240 170,300 130 " stroke-width="30" fill="transparent"/>
+      <path d="M160 200 H 220 C 270 200,240 230,300 270 " stroke-width="30" fill="transparent"/>
+      <!-- heart beat -->
+      <path class="upper-beat" d="M190 200 L 210 60 L 230 200" stroke-width="1" />
+      <path class="upper-beat2" d="M190 200 L 210 40 L 230 200" stroke-width="1" />
+      <path class="lower-beat" d="M170 200 L 190 340 L 210 200" stroke-width="1" />
+      <path class="lower-beat2" d="M170 200 L 190 360 L 210 200" stroke-width="1" />
+    </g>
+</svg>
+
+    <!-- svg -->
+    <div class="center-box">
+        <svg class='logoref' viewBox='0 180 500 200'>
+             <use class='logoall_ref' xlink:href='#logo_all'></use>
+        </svg>
+    </div>
 </body>
 </html>
 
